@@ -4,7 +4,7 @@
 		module="restfulwebservice_2.12"
 		revision="1.0-SNAPSHOT"
 		status="integration"
-		publication="20180929032734"
+		publication="20181004201358"
 	>
 		<description>
 		RestFulWebService
@@ -54,5 +54,6 @@
 		<dependency org="com.typesafe.play" name="play-json_2.12" rev="2.3.4" conf="compile->default(compile)"/>
 		<dependency org="com.typesafe.play" name="play-java-jdbc_2.12" rev="2.6.18" conf="compile->default(compile)"/>
 		<dependency org="org.xerial" name="sqlite-jdbc" rev="3.23.1" conf="compile->default(compile)"/>
+		<dependency org="commons-io" name="commons-io" rev="2.4" conf="compile->default(compile)"/>
 	</dependencies>
 </ivy-module>

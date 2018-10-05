@@ -23,4 +23,9 @@ libraryDependencies += javaForms
 
 libraryDependencies += javaJdbc
 
+
 libraryDependencies += "org.xerial" % "sqlite-jdbc" % "3.23.1"
+// https://mvnrepository.com/artifact/commons-io/commons-io
+libraryDependencies += "commons-io" % "commons-io" % "2.4"
+//dependency for logging
+

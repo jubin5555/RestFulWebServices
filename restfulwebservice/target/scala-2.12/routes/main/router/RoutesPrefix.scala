@@ -1,6 +1,6 @@
 // @GENERATOR:play-routes-compiler
 // @SOURCE:C:/Users/jajubina/Documents/RestFulWebService/restfulwebservice/conf/routes
-// @DATE:Sat Sep 29 01:36:15 EDT 2018
+// @DATE:Thu Oct 04 15:12:33 EDT 2018
 
 
 package router {

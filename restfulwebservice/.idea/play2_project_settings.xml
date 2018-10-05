@@ -20,6 +20,7 @@
         <entry key="root">
           <value>
             <ProjectSettingsEntry>
+              <option name="sourceDir" value="C:\Users\jajubina\Documents\RestFulWebService\restfulwebservice\app" />
               <option name="confDir" value="C:\Users\jajubina\Documents\RestFulWebService\restfulwebservice\app" />
               <option name="templateImports">
                 <list>

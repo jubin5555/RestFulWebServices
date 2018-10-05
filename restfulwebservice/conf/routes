@@ -5,5 +5,26 @@
 # An example controller showing a sample home page
 GET     /                           controllers.HomeController.index
 
+POST    /addbalance/usd/:amount     controllers.HomeController.addBalanceUSD(amount :String)
+
+GET     /getbalance                 controllers.HomeController.getBalance
+
+GET     /transactions               controllers.HomeController.getTransactions()
+
+GET     /transactions/:transactionID controllers.HomeController.getTransaction(transactionID :String)
+
+GET     /selloffers                   controllers.HomeController.getSellOffers
+
+GET      /selloffers/:offerid         controllers.HomeController.getSellOffer(offerid :String)
+
+POST    /buy/:maxrate/:amount         controllers.HomeController.buy(maxrate:String,amount:String)
+
+POST    /debug/confirm_fail            controllers.HomeController.confirmFail()
+
+POST    /debug/confirm_no_response      controllers.HomeController.confirmNoResponse()
+
+POST    /debug/reset                     controllers.HomeController.confirmReset()
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)
+
+
