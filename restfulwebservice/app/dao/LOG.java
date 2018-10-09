@@ -4,7 +4,7 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
-import static dao.DataBaseConnection.connect;
+import static dao.LogDataBaseConnection.connect;
 
 
 public class LOG {
@@ -18,12 +18,11 @@ public class LOG {
             PreparedStatement pstmt = c.prepareStatement(sql);
             // set the corresponding param for the sql statements
             pstmt.setString(1, log);
-
             // execute the sql statement
             pstmt.executeUpdate();
         } catch (SQLException e)
         {
-            e.printStackTrace();
+
         }
         finally{
             c.close();

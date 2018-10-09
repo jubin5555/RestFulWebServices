@@ -109,7 +109,7 @@ public class MarketActor extends AbstractActor {
             this.c=c;
             c.setAutoCommit(false);
             Iterator it = map.entrySet().iterator();
-            String timeStamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(Calendar.getInstance().getTime());
+            String timeStamp = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss").format(Calendar.getInstance().getTime());
             int transactionID =dao.TransactionsDao.getLastTransactionId() +1;
             while(it.hasNext()) {
                 Map.Entry pair = (Map.Entry) it.next();
@@ -120,10 +120,11 @@ public class MarketActor extends AbstractActor {
                 tempBoolean =tempBoolean && x;
                 if(Boolean.TRUE.equals(tempBoolean))
                 {
-                    dao.LOG.insertLog("Hold request is accepted at"+timeStamp+transactionID );
+                    dao.LOG.insertLog("Hold request is accepted at "+timeStamp+" for Transaction ID: "+transactionID );
                     BtcPreSale.updateBtcOnPurchase(tempList.get(0),tempOfferID,c);
                 }
                 else{
+                    dao.LOG.insertLog("Hold request is not accepted at "+timeStamp+" for Transaction ID: "+transactionID );
                     c.rollback();
                     c.setAutoCommit(true);
                     c.close();
@@ -141,15 +142,7 @@ public class MarketActor extends AbstractActor {
             this.c = c;
             if(Boolean.FALSE.equals(CONFIRM_NO_RESPONSE)) {
                 if (Boolean.FALSE.equals(CONFIRM_FAIL)) {
-                    String timeStamp = new SimpleDateFormat(
-                            "yyyyMMdd_HHmmss").format(Calendar
-                            .getInstance().getTime());
-                       // int transactionID =dao.TransactionsDao.getLastTransactionId() +1;
-                       /* dao.LOG.insertLog("A confirm has been " +
-                                "received by the marketActor at "+timeStamp
-                                +"for"+transactionID
-                        );*/
-
+                    int transactionID =dao.TransactionsDao.getLastTransactionId() +1;
                     this.confirm = true;
                     c.commit();
                     c.setAutoCommit(true);
@@ -160,6 +153,13 @@ public class MarketActor extends AbstractActor {
                         String tempOfferID = pair.getKey().toString();
                         List<Integer> tempList = (List<Integer>) pair.getValue();
                         TransactionsDao.insertTransaction(tempList.get(1), tempList.get(0));
+                        String timeStamp = new SimpleDateFormat(
+                                "yyyy/MM/dd HH:mm:ss").format(Calendar
+                                .getInstance().getTime());
+                        dao.LOG.insertLog("A confirm has been " +
+                                " received by the marketActor at "+timeStamp
+                                +"for "+transactionID
+                        );
                     }
                 } else {
                     c.rollback();

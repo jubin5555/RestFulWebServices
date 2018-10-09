@@ -35,7 +35,6 @@ public class TransactionsDao {
             while(rs.next())
             {
                 list.add(rs.getInt("ID"));
-
             }
             objectNode1.put("list",list.toString());
             objectNode1.put("status","success");
@@ -48,7 +47,6 @@ public class TransactionsDao {
         }
 return objectNode1;
     }
-
 
     public static JsonNode  getTransactionDetail(int id) throws SQLException {
         ObjectMapper mapper = new ObjectMapper();
@@ -68,7 +66,6 @@ return objectNode1;
                 objectNode1.put("amount",rs.getInt("amount"));
 
             }
-
             if(objectNode1.get("rate")==null || objectNode1.get("amount")==null){
                 ObjectMapper mapper1 = new ObjectMapper();
                 ObjectNode objectNode2 = mapper1.createObjectNode();
@@ -85,7 +82,6 @@ return objectNode1;
         }
         return objectNode1;
     }
-
 
     public static void insertTransaction(int rate,int amount) throws SQLException {
         {
@@ -110,6 +106,7 @@ return objectNode1;
             }
         }
     }
+
     public static  int getLastTransactionId() throws SQLException {
         {
             Connection c =connect();
@@ -134,13 +131,5 @@ return objectNode1;
             }
             return transactionID;
         }
-
-
     }
-
-public static void main(String[] args) throws SQLException {
-    int i=getLastTransactionId();
-    System.out.println(i);
-}
-
 }

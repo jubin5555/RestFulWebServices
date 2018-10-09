@@ -4,9 +4,6 @@ import akka.actor.AbstractActor;
 import akka.actor.ActorRef;
 import akka.actor.ActorSystem;
 import akka.actor.Props;
-import akka.event.Logging;
-import akka.event.LoggingAdapter;
-import akka.pattern.AskTimeoutException;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ObjectNode;
@@ -14,7 +11,6 @@ import dao.BalanceDao;
 import dao.BtcPreSale;
 import scala.compat.java8.FutureConverters;
 
-import play.Logger;
 
 import java.io.IOException;
 import java.sql.Connection;
@@ -23,8 +19,7 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.HashMap;
 import java.util.List;
-import java.util.Optional;
-import java.util.concurrent.TimeoutException;
+
 
 
 import static akka.pattern.Patterns.ask;
@@ -51,7 +46,8 @@ public class UserActor extends AbstractActor {
                 .match(SetBalance.class, balance -> {
                     sender().tell(balance.balanceSucessJson, getSelf());
                 })
-                .match(buy.class, purchase -> { HashMap<String, List<Integer>> map = purchase.purchaseList;
+                .match(buy.class, purchase -> {
+                    HashMap<String, List<Integer>> map = purchase.purchaseList;
                     if (map.size() == 0) {
                         ObjectMapper mapper = new ObjectMapper();
                         ObjectNode objectNode1 = mapper.createObjectNode();
@@ -78,7 +74,7 @@ public class UserActor extends AbstractActor {
                                             new MarketActor.checkConfirmation(map, c), 5000)).thenApply(
                                                     response2 -> { if (Boolean.TRUE.equals(response2)) {
                                                         //only if confirm is true the database changes value// in the users account
-                                                        String timeStamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(Calendar
+                                                        String timeStamp = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss").format(Calendar
                                                                         .getInstance().getTime());
                                                         int transactionID = 0;
                                                         try { transactionID = dao.TransactionsDao.getLastTransactionId() + 1;
@@ -100,7 +96,7 @@ public class UserActor extends AbstractActor {
 
                                                     } else {
                                                         String timeStamp = new SimpleDateFormat(
-                                                                "yyyyMMdd_HHmmss").format(Calendar
+                                                                "yyyy/MM/dd HH:mm:ss").format(Calendar
                                                                         .getInstance().getTime());
                                                         int transactionID = 0;
                                                         try {
@@ -108,12 +104,14 @@ public class UserActor extends AbstractActor {
                                                                 } catch (SQLException e) {
                                                             e.printStackTrace();
                                                         }
-                                                        try { dao.LOG.insertLog("A failure has been " +
+                                                        try {
+                                                            dao.LOG.insertLog("A failure has been " +
                                                                             "received by the userActor at " + timeStamp
-                                                                            + "for " + transactionID);
+                                                                            + "for transactionID " + transactionID);
                                                         } catch (SQLException e) {
                                                                     e.printStackTrace();
-                                                        }ObjectMapper mapper = new ObjectMapper();
+                                                        }
+                                                        ObjectMapper mapper = new ObjectMapper();
                                                         ObjectNode objectNode1 = mapper.createObjectNode();
                                                         objectNode1.put("status:", "failure");
                                                         objectNode1.put("error", "error in " +
