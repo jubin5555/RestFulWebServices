@@ -64,7 +64,6 @@ public class UserActor extends AbstractActor {
                         sender().tell(objectNode1, self());
                         return;
                     }
-                    System.out.println(map);
                     ActorRef tempSender = sender();
                     StringBuilder sb = new StringBuilder();
                     StringBuilder sb2 = new StringBuilder();
@@ -81,7 +80,7 @@ public class UserActor extends AbstractActor {
                                                         } catch (SQLException e) { e.printStackTrace(); }
                                                         try { dao.LOG.insertLog("A success has been " +
                                                                         "received by the userActor at " + timeStamp
-                                                                        + "for" + transactionID);
+                                                                        + "for transactionID: " + transactionID);
                                                         } catch (SQLException e) {
                                                             e.printStackTrace();
                                                         }
@@ -107,7 +106,7 @@ public class UserActor extends AbstractActor {
                                                         try {
                                                             dao.LOG.insertLog("A failure has been " +
                                                                             "received by the userActor at " + timeStamp
-                                                                            + "for transactionID " + transactionID);
+                                                                            + "for transactionID: " + transactionID);
                                                         } catch (SQLException e) {
                                                                     e.printStackTrace();
                                                         }

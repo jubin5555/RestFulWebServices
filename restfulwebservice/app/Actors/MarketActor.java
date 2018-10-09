@@ -41,7 +41,7 @@ public class MarketActor extends AbstractActor {
                         -> {
                     sender().tell(SellOfferDetailByID.SellOfferDetailJson, self());
                 }).match(MarketActor.checkHoldStatus.class, status -> {
-                    System.out.println("apni status "+ status.holdConfirmation);
+
                     sender().tell(status.c,self());
                 })
                 .match(MarketActor.checkConfirmation.class, statusConfirmation -> {
@@ -116,7 +116,7 @@ public class MarketActor extends AbstractActor {
                 String tempOfferID = pair.getKey().toString();
                 List<Integer> tempList = (List<Integer>) pair.getValue();
                 Boolean x= BtcPreSale.btcMarketConfirmation(tempOfferID, tempList.get(0));
-                System.out.println("x is" +x);
+
                 tempBoolean =tempBoolean && x;
                 if(Boolean.TRUE.equals(tempBoolean))
                 {
@@ -158,7 +158,7 @@ public class MarketActor extends AbstractActor {
                                 .getInstance().getTime());
                         dao.LOG.insertLog("A confirm has been " +
                                 " received by the marketActor at "+timeStamp
-                                +"for "+transactionID
+                                +"for Transaction ID: "+transactionID
                         );
                     }
                 } else {

@@ -2,21 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a5518c75-fde9-432b-a6e4-ee00002a91d0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/dao/LogDataBaseConnection.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Actors/MarketActor.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/Actors/MarketActor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Actors/UserActor.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/Actors/UserActor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/dao/LOG.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/dao/LOG.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/dao/TransactionsDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/dao/TransactionsDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conf/application.conf" beforeDir="false" afterPath="$PROJECT_DIR$/conf/application.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/Test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/dao/BtcPreSale.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/dao/BtcPreSale.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/logger.db" beforeDir="false" afterPath="$PROJECT_DIR$/db/logger.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db/sample.db" beforeDir="false" afterPath="$PROJECT_DIR$/db/sample.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/Actors/MarketActor$checkHoldStatus.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/Actors/MarketActor$checkHoldStatus.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/application.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/application.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/Actors/UserActor$CheckBalance.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/Actors/UserActor$CheckBalance.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/Actors/UserActor$SetBalance.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/Actors/UserActor$SetBalance.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/Actors/UserActor$buy.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/Actors/UserActor$buy.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/Actors/UserActor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/Actors/UserActor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/application.conf" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/application.conf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/dao/LOG.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/dao/LOG.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/dao/BtcPreSale.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/dao/BtcPreSale.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/dao/TransactionsDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/dao/TransactionsDao.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/ncsu/restfulwebservice_2.12/1.0-SNAPSHOT/resolved.xml.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/ncsu/restfulwebservice_2.12/1.0-SNAPSHOT/resolved.xml.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/ncsu/restfulwebservice_2.12/1.0-SNAPSHOT/resolved.xml.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/ncsu/restfulwebservice_2.12/1.0-SNAPSHOT/resolved.xml.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/ncsu-restfulwebservice_2.12-compile-internal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/resolution-cache/reports/ncsu-restfulwebservice_2.12-compile-internal.xml" afterDir="false" />
@@ -42,7 +41,6 @@
       <change beforePath="$PROJECT_DIR$/target/streams/$global/update/$global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/$global/update/$global/streams/out" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/streams/$global/update/$global/streams/update_cache_2.12/output" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/$global/update/$global/streams/update_cache_2.12/output" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/streams/compile/compileIncSetup/$global/streams/inc_compile_2.12.zip" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/compileIncSetup/$global/streams/inc_compile_2.12.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/streams/compile/copyResources/$global/streams/copy-resources" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/copyResources/$global/streams/copy-resources" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/project/project/target/" />
@@ -92,7 +90,7 @@
           <entry key="conf" value="5" />
           <entry key="db" value="3" />
           <entry key="gradlew" value="1" />
-          <entry key="java" value="51" />
+          <entry key="java" value="54" />
           <entry key="routes" value="5" />
           <entry key="sbt" value="4" />
           <entry key="scala" value="9" />
@@ -102,7 +100,7 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="HOCON" value="5" />
-          <entry key="JAVA" value="51" />
+          <entry key="JAVA" value="54" />
           <entry key="PLAIN_TEXT" value="4" />
           <entry key="Play 2 routing" value="5" />
           <entry key="Scala" value="9" />
@@ -114,7 +112,7 @@
         <counts>
           <entry key="conf" value="211" />
           <entry key="dummy" value="13" />
-          <entry key="java" value="21063" />
+          <entry key="java" value="21117" />
           <entry key="routes" value="914" />
           <entry key="sbt" value="41" />
         </counts>
@@ -122,7 +120,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HOCON" value="211" />
-          <entry key="JAVA" value="21063" />
+          <entry key="JAVA" value="21117" />
           <entry key="PLAIN_TEXT" value="13" />
           <entry key="Play 2 routing" value="914" />
           <entry key="sbt" value="41" />
@@ -132,11 +130,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/dao/TransactionsDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2295">
-              <caret line="135" lean-forward="true" selection-start-line="135" selection-end-line="135" />
+            <state relative-caret-position="-153">
+              <caret line="90" column="30" selection-start-line="90" selection-start-column="30" selection-end-line="90" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -147,8 +145,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/HomeController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-110">
-              <caret line="51" column="38" selection-start-line="51" selection-start-column="38" selection-end-line="51" selection-end-column="38" />
+            <state relative-caret-position="360">
+              <caret line="90" column="83" selection-start-line="90" selection-start-column="83" selection-end-line="90" selection-end-column="83" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -159,8 +157,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/dao/BtcPeopleDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="21" column="32" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
+            <state relative-caret-position="-306">
+              <caret line="18" column="32" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -171,8 +169,32 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/dao/BalanceDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1432">
-              <caret line="142" column="18" lean-forward="true" selection-start-line="142" selection-start-column="18" selection-end-line="142" selection-end-column="18" />
+            <state relative-caret-position="-218">
+              <caret line="142" column="18" selection-start-line="142" selection-start-column="18" selection-end-line="142" selection-end-column="18" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/dao/BtcPreSale.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="75" column="45" selection-start-line="75" selection-start-column="45" selection-end-line="75" selection-end-column="45" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/dao/SellOffersDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="918">
+              <caret line="69" column="27" selection-start-line="69" selection-start-column="27" selection-end-line="69" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -183,8 +205,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Actors/MarketActor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="259">
-              <caret line="177" column="46" selection-start-line="177" selection-start-column="46" selection-end-line="177" selection-end-column="46" />
+            <state relative-caret-position="131">
+              <caret line="158" column="31" selection-start-line="158" selection-start-column="28" selection-end-line="158" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -192,11 +214,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Actors/UserActor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1173">
-              <caret line="71" column="58" lean-forward="true" selection-start-line="71" selection-start-column="58" selection-end-line="71" selection-end-column="58" />
+            <state relative-caret-position="1768">
+              <caret line="106" column="35" selection-start-line="106" selection-start-column="35" selection-end-line="106" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -208,7 +230,7 @@
         <entry file="file://$PROJECT_DIR$/app/dao/DataBaseConnection.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="51">
-              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+              <caret line="3" selection-start-line="3" selection-end-line="3" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -220,28 +242,7 @@
         <entry file="file://$PROJECT_DIR$/app/dao/LogDataBaseConnection.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="136">
-              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/conf/application.conf">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="19" lean-forward="true" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/dao/LOG.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="23" column="9" lean-forward="true" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
+              <caret line="8" selection-start-line="8" selection-end-line="8" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -263,11 +264,14 @@
       <find>slaidsNode</find>
       <find>SellOffers()</find>
       <find>buy</find>
-      <find>getb</find>
       <find>Hold</find>
       <find>success</find>
-      <find>log</find>
+      <find>true</find>
+      <find>getb</find>
       <find>tran</find>
+      <find>System.out.</find>
+      <find>System.out</find>
+      <find>log</find>
     </findStrings>
     <replaceStrings>
       <replace>Nodes</replace>
@@ -287,7 +291,6 @@
         <option value="$PROJECT_DIR$/app/dao/BtcDao.java" />
         <option value="$PROJECT_DIR$/app/dao/SellOffersDao.java" />
         <option value="$PROJECT_DIR$/app/dao/BtcPeopleDao.java" />
-        <option value="$PROJECT_DIR$/app/dao/BtcPreSale.java" />
         <option value="$PROJECT_DIR$/build.sbt" />
         <option value="$PROJECT_DIR$/conf/routes" />
         <option value="$PROJECT_DIR$/app/dao/BalanceDao.java" />
@@ -295,9 +298,10 @@
         <option value="$PROJECT_DIR$/conf/application.conf" />
         <option value="$PROJECT_DIR$/app/dao/LogDataBaseConnection.java" />
         <option value="$PROJECT_DIR$/app/dao/LOG.java" />
+        <option value="$PROJECT_DIR$/app/dao/TransactionsDao.java" />
+        <option value="$PROJECT_DIR$/app/dao/BtcPreSale.java" />
         <option value="$PROJECT_DIR$/app/Actors/MarketActor.java" />
         <option value="$PROJECT_DIR$/app/Actors/UserActor.java" />
-        <option value="$PROJECT_DIR$/app/dao/TransactionsDao.java" />
       </list>
     </option>
   </component>
@@ -329,7 +333,7 @@
       </array>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="85" />
     <option name="y" value="25" />
     <option name="width" value="1750" />
@@ -358,6 +362,18 @@
               <item name="RestFulWebService" type="b2602c69:ProjectViewProjectNode" />
               <item name="restfulwebservice" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Actors" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RestFulWebService" type="b2602c69:ProjectViewProjectNode" />
+              <item name="restfulwebservice" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RestFulWebService" type="b2602c69:ProjectViewProjectNode" />
+              <item name="restfulwebservice" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="dao" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -378,10 +394,10 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="Hold&#9;PSI&#9;JAVA://Actors.MarketActor.checkHoldStatus&#10;HOLD request&#9;null&#9;null&#10;log&#9;FILE&#9;file://C:/Users/jajubina/Documents/RestFulWebService/restfulwebservice/db/logger.db&#10;SellOffers&#9;FILE&#9;file://C:/Users/jajubina/Documents/RestFulWebService/restfulwebservice/app/dao/SellOffersDao.java&#10;transa&#9;FILE&#9;file://C:/Users/jajubina/Documents/RestFulWebService/restfulwebservice/app/dao/TransactionsDao.java&#10;recover&#9;null&#9;null&#10;Hold mai&#9;null&#9;null&#10;updatepurc&#9;PSI&#9;JAVA://dao.BtcPreSale#updateBtcOnPurchase&#10;tra&#9;FILE&#9;file://C:/Users/jajubina/Documents/RestFulWebService/restfulwebservice/app/dao/TransactionsDao.java&#10;&quot;output is&quot;&#9;null&#9;null&#10;sample.db&#9;FILE&#9;file://C:/Users/jajubina/Documents/RestFulWebService/restfulwebservice/db/sample.db" />
+    <property name="SearchEverywhereHistoryKey" value="tra&#9;FILE&#9;file://C:/Users/jajubina/Documents/RestFulWebService/restfulwebservice/app/dao/TransactionsDao.java&#10;Hold&#9;PSI&#9;JAVA://Actors.MarketActor.checkHoldStatus&#10;HOLD request&#9;null&#9;null&#10;log&#9;FILE&#9;file://C:/Users/jajubina/Documents/RestFulWebService/restfulwebservice/db/logger.db&#10;SellOffers&#9;FILE&#9;file://C:/Users/jajubina/Documents/RestFulWebService/restfulwebservice/app/dao/SellOffersDao.java&#10;transa&#9;FILE&#9;file://C:/Users/jajubina/Documents/RestFulWebService/restfulwebservice/app/dao/TransactionsDao.java&#10;recover&#9;null&#9;null&#10;Hold mai&#9;null&#9;null&#10;updatepurc&#9;PSI&#9;JAVA://dao.BtcPreSale#updateBtcOnPurchase&#10;&quot;output is&quot;&#9;null&#9;null&#10;sample.db&#9;FILE&#9;file://C:/Users/jajubina/Documents/RestFulWebService/restfulwebservice/db/sample.db" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539101004521" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539123241459" />
     <property name="last_opened_file_path" value="$USER_HOME$/Downloads/akka-quickstart-java" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -539,12 +555,12 @@
       <updated>1538203156753</updated>
       <workItem from="1538203159924" duration="36561000" />
       <workItem from="1538492406167" duration="64391000" />
-      <workItem from="1538621640999" duration="56890000" />
+      <workItem from="1538621640999" duration="62313000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="157842000" />
+    <option name="totallyTimeSpent" value="163265000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -559,7 +575,7 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23154363" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23154363" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -576,7 +592,7 @@
       <window_info anchor="bottom" id="Build" order="7" weight="0.32907802" />
       <window_info anchor="bottom" id="SBT Console" order="8" weight="0.32907802" />
       <window_info anchor="bottom" id="sbt-shell-toolwindow" order="9" weight="0.32907802" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.4986577" visible="true" weight="0.0" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.4986577" weight="0.32907802" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5013423" side_tool="true" weight="0.39007092" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" weight="0.32907802" />
       <window_info anchor="bottom" id="Spring" order="13" weight="0.32907802" />
@@ -713,16 +729,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-374">
-          <caret line="26" selection-start-line="26" selection-end-line="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.ivy2/cache/org.xerial/sqlite-jdbc/srcs/sqlite-jdbc-3.23.1-sources.jar!/org/sqlite/jdbc3/JDBC3Connection.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
@@ -734,16 +740,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="280">
           <caret line="30" selection-start-line="30" selection-end-line="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/dao/BtcPreSale.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1258">
-          <caret line="81" column="9" selection-start-line="81" selection-start-column="9" selection-end-line="81" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -803,26 +799,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/dao/SellOffersDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="18" column="61" selection-start-line="18" selection-start-column="61" selection-end-line="18" selection-end-column="61" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/HomeController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-110">
-          <caret line="51" column="38" selection-start-line="51" selection-start-column="38" selection-end-line="51" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/db/sample.db">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -843,23 +819,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/dao/BtcPeopleDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="21" column="32" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/db/logger.db">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/dao/LogDataBaseConnection.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -869,37 +835,27 @@
     <entry file="file://$PROJECT_DIR$/app/dao/DataBaseConnection.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/dao/BalanceDao.java">
+    <entry file="file://$PROJECT_DIR$/app/controllers/Test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1432">
-          <caret line="142" column="18" lean-forward="true" selection-start-line="142" selection-start-column="18" selection-end-line="142" selection-end-column="18" />
+        <state relative-caret-position="442">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Actors/UserActor.java">
+    <entry file="file://$PROJECT_DIR$/app/dao/SellOffersDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1173">
-          <caret line="71" column="58" lean-forward="true" selection-start-line="71" selection-start-column="58" selection-end-line="71" selection-end-column="58" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Actors/MarketActor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="177" column="46" selection-start-line="177" selection-start-column="46" selection-end-line="177" selection-end-column="46" />
+        <state relative-caret-position="918">
+          <caret line="69" column="27" selection-start-line="69" selection-start-column="27" selection-end-line="69" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -908,8 +864,68 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/dao/TransactionsDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2295">
-          <caret line="135" lean-forward="true" selection-start-line="135" selection-end-line="135" />
+        <state relative-caret-position="-153">
+          <caret line="90" column="30" selection-start-line="90" selection-start-column="30" selection-end-line="90" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/dao/BtcPeopleDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-306">
+          <caret line="18" column="32" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/dao/BalanceDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-218">
+          <caret line="142" column="18" selection-start-line="142" selection-start-column="18" selection-end-line="142" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/dao/BtcPreSale.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="75" column="45" selection-start-line="75" selection-start-column="45" selection-end-line="75" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/HomeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="90" column="83" selection-start-line="90" selection-start-column="83" selection-end-line="90" selection-end-column="83" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Actors/MarketActor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="131">
+          <caret line="158" column="31" selection-start-line="158" selection-start-column="28" selection-end-line="158" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Actors/UserActor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1768">
+          <caret line="106" column="35" selection-start-line="106" selection-start-column="35" selection-end-line="106" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

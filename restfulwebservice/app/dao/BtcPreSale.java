@@ -61,7 +61,7 @@ public class BtcPreSale {
             while(rs.next() && count>0)
             {
                if( rs.getInt("rate")<=maxrate){
-                   if(rs.getInt("amount")>=count && count !=0)
+                   if((rs.getInt("amount")>=count &&rs.getInt("amount")!=0) && count !=0)
                    {
                        List<Integer> tempList = new ArrayList<>();
                        tempList.add(count);
@@ -69,7 +69,7 @@ public class BtcPreSale {
                        map.put(rs.getString("offerID"),tempList);
                        return map;
                     }
-                   else if(rs.getInt("amount")<count && count !=0){
+                   else if((rs.getInt("amount")<count &&rs.getInt("amount")!=0) && count !=0){
                        List<Integer> tempList = new ArrayList<>();
                        tempList.add(rs.getInt("amount"));
                        tempList.add(rs.getInt("rate"));
@@ -120,10 +120,7 @@ public class BtcPreSale {
         }
 
     }
-public static void main(String[] args) throws SQLException {
-        HashMap<String,List<Integer>> map =checkAvailableBtc(2,100);
-    System.out.println(map);
-}
+
 
 
 }
